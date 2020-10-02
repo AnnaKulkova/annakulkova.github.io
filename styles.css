@@ -1,0 +1,130 @@
+:root{
+    --inner-padding: 20px 25px;
+    --border-radius: 2px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebf3f6;
+}
+#outer-box{
+    flex-flow: column;
+    width: 600px;
+    margin-top: 20px;
+}
+#outer-box *{
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+
+}
+
+.check-item-box{
+    display: flex;
+    min-height: 60px;
+}
+.check-item-box > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check-box{
+    background-color: #ee6a68;
+    padding: var(--inner-padding);
+    margin: 0.5px 0.5px 0.5px 0;
+}
+.check-item-box:first-child .check-box,
+.check-item-box:first-child .todo-item{
+    margin-top: 0;
+}
+.check-item-box:last-child .check-box,
+.check-item-box:last-child .todo-item{
+    margin-bottom: 0;
+}
+.todo-item{
+    background-color: #ee6a68;
+    width: 100%;
+    padding: var(--inner-padding);
+    margin: 0.5px 0 0.5px 0.5px;
+    justify-content: start;
+    color: #fff;
+}
+
+#new-item-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    min-height: 50px;
+    margin-top: 17px;
+    background-color: #fff;
+}
+
+#input-text > input{
+    border: none;
+    outline: none;
+}
+#color-button-box{
+    display: flex;
+    align-items: center;
+}
+#color-button-box ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#color-button-box  ul  li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 2px;
+    width: 16px;
+    height: 16px;
+}
+
+#color-button-box ul li:first-child{
+    margin-left: 0;
+}
+#color-button-box ul li:last-child{
+    margin-right: 15px;
+}
+#color-button-box  ul  li div{
+    width: 100%;
+    height: 100%;
+    background-color: #ee6a68;
+    border: none;
+    box-sizing: content-box;
+}
+#color-button-box  ul  li:nth-child(2) div{
+    background-color: #f379a2;
+}
+#color-button-box  ul  li:nth-child(3) div{
+    background-color: #9170cb;
+}
+#color-button-box  ul  li:nth-child(4) div{
+    background-color: #5eb3f6;
+}
+#color-button-box  ul  li:nth-child(5) div{
+    background-color: #67d7e5;
+}
+#color-button-box  ul  li:nth-child(6) div{
+    background-color: #ffe083;
+}
+
+#add-button{
+    width: 65px;
+    height: 35px;
+}
+#add-button button{
+    width: 100%;
+    height: 100%;
+    background-color: #26a59a;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
