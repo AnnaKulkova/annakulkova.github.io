@@ -4,33 +4,17 @@
     <meta charset="UTF-8">
     <title>ToDo List</title>
     <link rel="stylesheet" href="styles.css"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+          rel="stylesheet">
 </head>
 <body>
     <div id="outer-box">
-        <div id="item-box">
-            <div class="check-item-box">
-                <div class = "check-box">
-                    <input type="checkbox">
-                </div>
-                <div class = "todo-item">Todo item 1</div>
-            </div>
-            <div class="check-item-box">
-                <div class = "check-box">
-                    <input type="checkbox">
-                </div>
-                <div class = "todo-item">Todo item 2</div>
-            </div>
-            <div class="check-item-box">
-                <div class = "check-box">
-                    <input type="checkbox">
-                </div>
-                <div class = "todo-item">Todo item 3</div>
-            </div>
+        <div id="item-box" class = "swing">
+            <p>Add your first node!</p>
         </div>
         <div id = "new-item-box">
             <div id = "input-text" >
-                <input type="text" placeholder="Add New Item"/>
+                <input type="text" placeholder="Add New Item" value="Add me" autofocus/>
             </div>
             <div id = "color-button-box">
                 <ul>
@@ -42,7 +26,7 @@
                     <li><div></div></li>
                 </ul>
                 <div id = "add-button">
-                    <button> Add </button>
+                    <input type="button" value="Add" />
                 </div>
             </div>
         </div>
